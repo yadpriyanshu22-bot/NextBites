@@ -2,16 +2,13 @@ import type { Recipe } from "../data/recipes";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
-    <article className="recipe-card">
-      <div className="recipe-card-content">
-        <h2>{recipe.title}</h2>
-        <p>{recipe.description}</p>
+    <div className="card">
+      <h3>{recipe.title}</h3>
 
-        <div className="recipe-info">
-          <span>⏱ {recipe.minutes} min</span>
-          <span>{recipe.cuisine}</span>
-        </div>
+      <div className="card-meta">
+        <span>⏱ {recipe.minutes} min</span>
+        <span>{recipe.cuisine}</span>
       </div>
-    </article>
+    </div>
   );
 }
