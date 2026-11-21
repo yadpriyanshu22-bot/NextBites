@@ -1,17 +1,18 @@
-
 import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="navbar">
-      <Link href="/" className="nav-logo">
-        <h2>NextBites 🍴</h2>
-      </Link>
+    <header className="navbar">
+      <div className="container navbar-inner">
+        <Link href="/" className="brand">
+          <span>🍴</span>
+          <span>NextBites</span>
+        </Link>
 
-      <div className="nav-links">
-        <Link href="/">Home</Link>
-        <Link href="/#recipes">Recipes</Link>
+        <nav className="nav-links">
+          <Link href="/">Recipes</Link>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
