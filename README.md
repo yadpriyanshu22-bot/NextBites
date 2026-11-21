@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ NextBites
 
-## Getting Started
+NextBites is a responsive recipe discovery website built with Next.js, React, and TypeScript. Browse recipes, search for dishes, and discover your next favorite meal through a clean and interactive interface.
 
-First, run the development server:
+## ✨ Features
+- Browse a collection of recipes
+- Search recipes by name, category, or description
+- Reusable RecipeCard component
+- Recipe preparation time and difficulty
+- Dynamic search result count
+- Empty state for unmatched searches
+- Responsive recipe grid
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack
+- Next.js
+- React
+- TypeScript
+- CSS
+- Git & GitHub
+
+## 📁 Project Structure
+```text
+NextBites/
+├── app/
+│   ├── components/
+│   │   ├── NavBar.tsx
+│   │   └── RecipeCard.tsx
+│   ├── data/
+│   │   └── recipes.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
+```bash
+git clone https://github.com/yadpriyanshu22-bot/NextBites.git
+cd NextBites
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Production Build
+```bash
+npm run build
+```
 
-## Learn More
+## 📌 Project Status
+NextBites is actively being developed, with new features and UI improvements planned.
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
+Priyanshu Yadav
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[GitHub Profile](https://github.com/yadpriyanshu22-bot)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Repository
+[NextBites Repository](https://github.com/yadpriyanshu22-bot/NextBites)
