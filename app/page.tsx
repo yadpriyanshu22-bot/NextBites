@@ -6,12 +6,20 @@ import RecipeCard from "./components/RecipeCard";
 
 export default function Home() {
   const [search, setSearch] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const filteredRecipes = recipes.filter((recipe) =>
-    `${recipe.name} ${recipe.category} ${recipe.description}`
+  const categories = ["All", ...new Set(recipes.map((recipe) => recipe.category))];
+
+  const filteredRecipes = recipes.filter((recipe) => {
+    const matchesSearch = `${recipe.name} ${recipe.category} ${recipe.description}`
       .toLowerCase()
-      .includes(search.trim().toLowerCase())
-  );
+      .includes(search.trim().toLowerCase());
+
+    const matchesCategory =
+      selectedCategory === "All" || recipe.category === selectedCategory;
+
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <main className="page">
@@ -35,6 +43,21 @@ export default function Home() {
           onChange={(e) => setSearch(e.target.value)}
           aria-label="Search recipes by name, category, or description"
         />
+
+        <div className="category-filters">
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={`category-button ${
+                selectedCategory === category ? "active" : ""
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
         <p className="recipe-count">
           {filteredRecipes.length}{" "}
