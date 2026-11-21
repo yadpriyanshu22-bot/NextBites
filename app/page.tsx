@@ -1,8 +1,8 @@
-
 "use client";
 
 import { useState } from "react";
 import { recipes } from "./data/recipes";
+import RecipeCard from "./components/RecipeCard";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -43,22 +43,7 @@ export default function Home() {
 
         <div className="recipe-grid">
           {filteredRecipes.map((recipe) => (
-            <article className="recipe-card" key={recipe.id}>
-              <div className={`recipe-image ${recipe.color}`}>
-                <span>{recipe.emoji}</span>
-              </div>
-
-              <div className="recipe-content">
-                <h2>{recipe.name}</h2>
-                <p>{recipe.description}</p>
-
-                <div className="recipe-tags">
-                  <span>◷ {recipe.time}</span>
-                  <span>{recipe.difficulty}</span>
-                  <span className="category">{recipe.category}</span>
-                </div>
-              </div>
-            </article>
+            <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
         </div>
 
