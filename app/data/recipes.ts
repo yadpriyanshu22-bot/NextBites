@@ -1,52 +1,94 @@
+
 export type Recipe = {
   id: number;
-  title: string;
+  name: string;
   description: string;
-  minutes: number;
-  cuisine: string;
+  time: string;
+  difficulty: string;
+  category: string;
+  emoji: string;
+  color: string;
 };
 
 export const recipes: Recipe[] = [
   {
     id: 1,
-    title: "Creamy Garlic Pasta",
-    description: "Creamy pasta with garlic, parmesan, and herbs.",
-    minutes: 25,
-    cuisine: "Italian",
+    name: "Margherita Pizza",
+    description: "Blistered crust, San Marzano sauce, melty mozzarella, fresh basil.",
+    time: "35 min",
+    difficulty: "Medium",
+    category: "Italian",
+    emoji: "🍕",
+    color: "pink",
   },
   {
     id: 2,
-    title: "Paneer Butter Masala",
-    description: "Soft paneer cooked in a rich, creamy tomato gravy.",
-    minutes: 35,
-    cuisine: "Indian",
+    name: "Paneer Tikka",
+    description: "Smoky, spiced paneer cubes grilled with peppers and onion.",
+    time: "40 min",
+    difficulty: "Medium",
+    category: "Indian",
+    emoji: "🫒",
+    color: "orange",
   },
   {
     id: 3,
-    title: "Classic Margherita Pizza",
-    description: "A delicious pizza topped with cheese, basil, and tomato.",
-    minutes: 30,
-    cuisine: "Italian",
+    name: "Cold Brew Coffee",
+    description: "Smooth, low-acid coffee steeped slow overnight.",
+    time: "10 min",
+    difficulty: "Easy",
+    category: "Drinks",
+    emoji: "☕",
+    color: "blue",
   },
   {
     id: 4,
-    title: "Veg Fried Rice",
-    description: "Flavorful rice tossed with fresh vegetables and sauces.",
-    minutes: 20,
-    cuisine: "Chinese",
+    name: "Veg Burger",
+    description: "Crispy spiced patty, soft bun, tangy sauce, crunchy veg.",
+    time: "30 min",
+    difficulty: "Easy",
+    category: "American",
+    emoji: "🍔",
+    color: "peach",
   },
   {
     id: 5,
-    title: "Chocolate Pancakes",
-    description: "Fluffy pancakes topped with chocolate and maple syrup.",
-    minutes: 15,
-    cuisine: "American",
+    name: "Masala Fries",
+    description: "Golden fries tossed in chatpata Indian spices.",
+    time: "25 min",
+    difficulty: "Easy",
+    category: "Snacks",
+    emoji: "🍟",
+    color: "yellow",
   },
   {
     id: 6,
-    title: "Masala Dosa",
-    description: "Crispy dosa filled with spiced potato masala.",
-    minutes: 30,
-    cuisine: "South Indian",
+    name: "Lemon Iced Tea",
+    description: "Bright, fizzy, lightly sweet, perfect for sunny afternoons.",
+    time: "10 min",
+    difficulty: "Easy",
+    category: "Drinks",
+    emoji: "🧋",
+    color: "sky",
+  },
+  {
+    id: 7,
+    name: "Chocolate Mug Cake",
+    description: "Warm, gooey, single-serve chocolate cake in minutes.",
+    time: "8 min",
+    difficulty: "Easy",
+    category: "Dessert",
+    emoji: "🍫",
+    color: "purple",
+  },
+  {
+    id: 8,
+    name: "Greek Salad",
+    description: "Crisp cucumber, tomatoes, olives, feta, and fresh herbs.",
+    time: "15 min",
+    difficulty: "Easy",
+    category: "Healthy",
+    emoji: "🥗",
+    color: "green",
   },
 ];

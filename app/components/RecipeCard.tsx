@@ -3,11 +3,13 @@ import type { Recipe } from "../data/recipes";
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
     <div className="card">
-      <h3>{recipe.title}</h3>
+      <h3>{recipe.name}</h3>
+      <p>{recipe.description}</p>
 
       <div className="card-meta">
-        <span>⏱ {recipe.minutes} min</span>
-        <span>{recipe.cuisine}</span>
+        <span>⏱ {recipe.time}</span>
+        <span>{recipe.difficulty}</span>
+        <span>{recipe.category}</span>
       </div>
     </div>
   );
