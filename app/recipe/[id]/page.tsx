@@ -1,7 +1,14 @@
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { recipes } from "../../data/recipes";
 import { getCategoryGradient } from "../../components/RecipeCard";
+
+export function generateStaticParams() {
+  return recipes.map((recipe) => ({
+    id: String(recipe.id),
+  }));
+}
 
 export default async function RecipeDetailPage({
   params,
