@@ -2,8 +2,9 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 
 export const metadata = {
-  title: "NextBites",
-  description: "Browse, search, and cook recipes.",
+  title: "NextBites | Discover Delicious Recipes",
+  description:
+    "Explore delicious recipes, discover new meals, and find your next favorite dish with NextBites.",
 };
 
 export default function RootLayout({
