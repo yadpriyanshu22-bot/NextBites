@@ -61,3 +61,24 @@ Priyanshu Yadav
 
 ## 🔗 Repository
 [NextBites Repository](https://github.com/yadpriyanshu22-bot/NextBites)
+
+## Live Website
+Live Website: https://next-bites-zeta.vercel.app/
+
+## 🚀 Part 3 – Improvements & Deployment
+
+### Improvements
+- Added loading UI for better user experience.
+- Added a custom not-found page.
+- Added error handling using an error boundary.
+- Added page metadata for SEO.
+- Configured the project for static export.
+
+### Deployment
+- **Live Website:** https://next-bites-zeta.vercel.app/
+- **Deployment Platform:** Vercel
+- **Repository:** https://github.com/yadpriyanshu22-bot/NextBites
+- **Pull Request:** [PR #2](https://github.com/yadpriyanshu22-bot/NextBites/pull/2)
+
+### Production Build
+The project was successfully built using `npm run build`.
