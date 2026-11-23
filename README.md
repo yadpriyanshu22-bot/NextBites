@@ -61,3 +61,6 @@ Priyanshu Yadav
 
 ## 🔗 Repository
 [NextBites Repository](https://github.com/yadpriyanshu22-bot/NextBites)
+
+## Live Website
+Live Website: https://next-bites-zeta.vercel.app/
